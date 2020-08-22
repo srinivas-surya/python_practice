@@ -97,3 +97,36 @@ for i in new_dict:
     keys = i.keys()
     for key in keys:
         print("key: ", key)
+        
+        
+print("============= access nested dicts ====================")
+
+D = {'emp1': {'name': 'Bob', 'job': 'Mgr'},
+     'emp2': {'name': 'Kim', 'job': 'Dev'},
+     'emp3': {'name': 'Sam', 'job': 'Dev'}}
+
+print(D['emp1']['name'])
+# Prints Bob
+
+print(D['emp2']['job'])
+# prints Dev
+
+# looping throgh the nested dicts
+
+D = {'emp1': {'name': 'Bob', 'job': 'Mgr'},
+     'emp2': {'name': 'Kim', 'job': 'Dev'},
+     'emp3': {'name': 'Sam', 'job': 'Dev'}}
+
+for id, info in D.items():
+    print("\nEmployee ID:", id)
+    for key in info:
+        print(key + ':', info[key])
+        
+# adding new key-pair to the dicts
+D = {'emp1': {'name': 'Bob', 'job': 'Mgr'},
+     'emp2': {'name': 'Kim', 'job': 'Dev'},
+     'emp3': {'name': 'Sam', 'job': 'Dev'}}
+
+D['emp4'] = {'name': 'Max', 'job': 'Janitor'}
+
+print(D)
