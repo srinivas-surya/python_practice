@@ -92,3 +92,10 @@ for i in list_of_list:
             print("element present in list")
             break
 
+# prepare list with data 
+new_list = []
+
+for i in range(0, 10):
+    new_list.append(i)
+    
+print(new_list)
