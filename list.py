@@ -99,3 +99,12 @@ for i in range(0, 10):
     new_list.append(i)
     
 print(new_list)
+
+
+# print list of list
+
+L = [[1, 2, 3],[4, 5, 6],[7, 8, 9]]
+for list in L:
+    for number in list:
+        print(number, end=' ')
+
